@@ -1,4 +1,4 @@
-# final-project-starter
+# Project Proposal AE-24
 
 **Domain of Interest
 
