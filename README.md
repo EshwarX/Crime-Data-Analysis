@@ -31,8 +31,31 @@ Where did you download the data (e.g., a web URL)?
 
 How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?
 
-They are U.S. crime data set collected by the official organizations. Seattle Police Department, New York Police Department, 
+They are U.S. crime data set collected by the official organizations. 
+1. Seattle Police Department, it is the general crime dataset that keeps the record of crime happened in Seattle.
+2. New York Police Department, NYPD Shooting Incident Data, a record of shooting incidents.
+3. Data collected by Himanshu Rajput, motives of reported cyber-crimes in India, analyzes the main motives of cyber crime in India.
+4. United States Department of Justice, Federal Bureau of Investigation. Decribes hate crimes aginst different groups of people in 2010-2019.
 
 How many observations (rows) are in your data?
+
+1. 936,470
+2. 441
+3. 38
+4. Multiple datasets, around hundreds to a thousand rows.
+
 How many features (columns) are in the data?
+
+1. 17
+2. 19
+3. 12
+4. multiple datasets, 13, 14, 44 columns
+
 What questions (from above) can be answered using the data in this dataset?
+
+1. What type of crime happens with the highest rate?
+2. What are the locations where crimes are more prevalent?
+3. What are some typical motives of crimes?
+4. What are some typical motives of crimes?
+
+
