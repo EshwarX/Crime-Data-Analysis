@@ -199,39 +199,55 @@ pre code {
 <li>What are some typical <strong>motives</strong> of crimes?</li>
 <li>What type of crime happens the <strong>most</strong></li>
 <li>Are there any locations where only <em>specific</em> kinds of crimes happen the <strong>most</strong>?</li>
+<li>What <em>time</em> do crimes tend to happen the <strong>most</strong>?</li>
 </ol>
 </div>
 <div id="finding-data" class="section level3">
 <h3>Finding Data</h3>
 <p><strong>Where did you download the data (e.g., a web URL)?</strong></p>
 <ol style="list-style-type: decimal">
-<li><a href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5" class="uri">https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5</a></li>
-<li><a href="https://data.world/city-of-ny/5ucz-vwe8" class="uri">https://data.world/city-of-ny/5ucz-vwe8</a></li>
-<li><a href="https://data.world/drhimanshur/motives-of-reported-cyber-crimes-in-india-state-wise-201" class="uri">https://data.world/drhimanshur/motives-of-reported-cyber-crimes-in-india-state-wise-201</a></li>
-<li><a href="https://www.kaggle.com/sumaiaparveenshupti/us-hate-crime-dataset-20102019-multiple-sources" class="uri">https://www.kaggle.com/sumaiaparveenshupti/us-hate-crime-dataset-20102019-multiple-sources</a></li>
+<li>Seattle Police Department Crime Data (2008-Present) - <a href="https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5" class="uri">https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5</a></li>
+<li>NYPD Shooting Incident Data - <a href="https://data.world/city-of-ny/5ucz-vwe8" class="uri">https://data.world/city-of-ny/5ucz-vwe8</a></li>
+<li>Motives of reported cyber-crimes in India - <a href="https://data.world/drhimanshur/motives-of-reported-cyber-crimes-in-india-state-wise-2013" class="uri">https://data.world/drhimanshur/motives-of-reported-cyber-crimes-in-india-state-wise-2013</a></li>
+<li>US Hate Crime Dataset (2010-2019) - <a href="https://www.kaggle.com/sumaiaparveenshupti/us-hate-crime-dataset-20102019-multiple-sources" class="uri">https://www.kaggle.com/sumaiaparveenshupti/us-hate-crime-dataset-20102019-multiple-sources</a></li>
 </ol>
 <p><strong>How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?</strong></p>
-<p>They are U.S. crime data set collected by the official organizations. 1. Seattle Police Department, it is the general crime dataset that keeps the record of crime happened in Seattle. 2. New York Police Department, NYPD Shooting Incident Data, a record of shooting incidents. 3. Data collected by Himanshu Rajput, motives of reported cyber-crimes in India, analyzes the main motives of cyber crime in India. 4. United States Department of Justice, Federal Bureau of Investigation. Decribes hate crimes aginst different groups of people in 2010-2019.</p>
+<ol style="list-style-type: decimal">
+<li>The Seattle Police Department collected the data by relying on the <em>National Incident-based Reporting System</em> (abbreviated as <strong>NIBRS</strong>). The NIBRS involves a lot of data being collected about an incident that is reported. For example, this data set includes the time, address, longitude &amp; latitude coordinates, and offense for each incident reported.</li>
+<li>The New York Police Department manually extracted data <strong>every quarter</strong> of the calendar year. Before being put on their website, their <em>Office of Management Analysis and Planning</em> has to review it. This is data on every shooting incident in NYC that has occurred in that <em>current</em> year. For example, each record includes information on the time and location of the occurrence, as well as suspect and victim demographics.</li>
+<li>Himanshu Rajput collected the data by looking at <em>reports</em> of cyber-crimes in India. This data includes motives of these cyber-crimes such as <strong>revenge</strong> or <strong>greed</strong>.</li>
+<li>The United States Department of Justice, FBI collected data that was submitted by law enforcement. This data is about <strong>hate crimes</strong> and consists of states, the <em>motivations</em> for these hate crimes (race, sexual orientation, disability, gender, and gender identity).</li>
+</ol>
 <p><strong>How many observations (rows) are in your data?</strong></p>
 <ol style="list-style-type: decimal">
-<li>936,470</li>
-<li>441</li>
-<li>38</li>
-<li>Multiple datasets, around hundreds to a thousand rows.</li>
+<li>Seattle Police Department Crime Data - 936,401 rows/observations</li>
+<li>New York Police Department Shooting Incidents - 441 rows/observations</li>
+<li>Cyber-Crimes in India - 38 rows/observations</li>
+<li>Us Hate Crimes - Multiple datasets:
+<ul>
+<li>Austin Texas Hate Crimes 2020 - 35 rows/observations</li>
+<li>New York Hate Crimes 2010-2019 - 605 rows/observations</li>
+<li>Hate Crime Incidents - 2175 rows/observations</li>
+</ul></li>
 </ol>
 <p><strong>How many features (columns) are in the data?</strong></p>
 <ol style="list-style-type: decimal">
-<li>17</li>
-<li>19</li>
-<li>12</li>
-<li>multiple datasets, 13, 14, 44 columns</li>
+<li>Seattle Police Department Crime Data - 17 columns/features</li>
+<li>New York Police Department Shooting Incidents - 19 columns/features</li>
+<li>Cyber-Crimes in India - 12 columns/features</li>
+<li>US Hate Crimes - Multiple datasets:
+<ul>
+<li>Austin Texas Hate Crimes 2020 - 13 columns/features</li>
+<li>New York Hate Crimes 2010-2019 - 44 columns/features</li>
+<li>Hate Crime Incidents - 14 columns/features</li>
+</ul></li>
 </ol>
 <p><strong>What questions (from above) can be answered using the data in this dataset?</strong></p>
+<p>Perhaps all questions can be answered using the datasets, but these seem the be the easiest:</p>
 <ol style="list-style-type: decimal">
-<li>What type of crime happens with the highest rate?</li>
-<li>What are the locations where crimes are more prevalent?</li>
-<li>What are some typical motives of crimes?</li>
-<li>What are some typical motives of crimes?</li>
+<li>What are the locations where crime is the most <em>prevalent</em>?</li>
+<li>What are some typical <strong>motives</strong> of crimes?</li>
+<li>What type of crime happens the <strong>most</strong>?</li>
 </ol>
 </div>
 </div>

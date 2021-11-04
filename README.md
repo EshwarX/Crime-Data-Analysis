@@ -25,41 +25,48 @@ Therefore, we are interested to know about crimes that are happening all over th
 2. What are some typical **motives** of crimes?
 3. What type of crime happens the **most**
 4. Are there any locations where only _specific_ kinds of crimes happen the **most**?
+5. What _time_ do crimes tend to happen the **most**?
 
 ### Finding Data
 
 **Where did you download the data (e.g., a web URL)?**
 
-1. https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5
-2. https://data.world/city-of-ny/5ucz-vwe8
-3. https://data.world/drhimanshur/motives-of-reported-cyber-crimes-in-india-state-wise-201
-4. https://www.kaggle.com/sumaiaparveenshupti/us-hate-crime-dataset-20102019-multiple-sources
+1. Seattle Police Department Crime Data (2008-Present) - https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5
+2. NYPD Shooting Incident Data - https://data.world/city-of-ny/5ucz-vwe8
+3. Motives of reported cyber-crimes in India - https://data.world/drhimanshur/motives-of-reported-cyber-crimes-in-india-state-wise-2013
+4. US Hate Crime Dataset (2010-2019) - https://www.kaggle.com/sumaiaparveenshupti/us-hate-crime-dataset-20102019-multiple-sources
 
 **How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
 
-They are U.S. crime data set collected by the official organizations. 
-1. Seattle Police Department, it is the general crime dataset that keeps the record of crime happened in Seattle.
-2. New York Police Department, NYPD Shooting Incident Data, a record of shooting incidents.
-3. Data collected by Himanshu Rajput, motives of reported cyber-crimes in India, analyzes the main motives of cyber crime in India.
-4. United States Department of Justice, Federal Bureau of Investigation. Decribes hate crimes aginst different groups of people in 2010-2019.
+1. The Seattle Police Department collected the data by relying on the _National Incident-based Reporting System_ (abbreviated as **NIBRS**). The NIBRS involves a lot of data being collected about an incident that is reported. For example, this data set includes the time, address, longitude & latitude coordinates, and offense for each incident reported.
+2. The New York Police Department manually extracted data **every quarter** of the calendar year. Before being put on their website, their _Office of Management Analysis and Planning_ has to review it. This is data on every shooting incident in NYC that has occurred in that _current_ year. For example, each record includes information on the time and location of the occurrence, as well as suspect and victim demographics.
+3. Himanshu Rajput collected the data by looking at _reports_ of cyber-crimes in India. This data includes motives of these cyber-crimes such as **revenge** or **greed**.
+4. The United States Department of Justice, FBI collected data that was submitted by law enforcement. This data is about **hate crimes** and consists of states, the _motivations_ for these hate crimes (race, sexual orientation, disability, gender, and gender identity).
 
 **How many observations (rows) are in your data?**
 
-1. 936,470
-2. 441
-3. 38
-4. Multiple datasets, around hundreds to a thousand rows.
+1. Seattle Police Department Crime Data - 936,401 rows/observations
+2. New York Police Department Shooting Incidents - 441 rows/observations
+3. Cyber-Crimes in India - 38 rows/observations
+4. Us Hate Crimes - Multiple datasets:
+    - Austin Texas Hate Crimes 2020 - 35 rows/observations
+    - New York Hate Crimes 2010-2019 - 605 rows/observations
+    - Hate Crime Incidents - 2175 rows/observations
 
 **How many features (columns) are in the data?**
 
-1. 17
-2. 19
-3. 12
-4. multiple datasets, 13, 14, 44 columns
+1. Seattle Police Department Crime Data - 17 columns/features
+2. New York Police Department Shooting Incidents - 19 columns/features
+3. Cyber-Crimes in India - 12 columns/features
+4. US Hate Crimes - Multiple datasets:
+    - Austin Texas Hate Crimes 2020 - 13 columns/features
+    - New York Hate Crimes 2010-2019 - 44 columns/features
+    - Hate Crime Incidents - 14 columns/features
 
 **What questions (from above) can be answered using the data in this dataset?**
 
-1. What type of crime happens with the highest rate?
-2. What are the locations where crimes are more prevalent?
-3. What are some typical motives of crimes?
-4. What are some typical motives of crimes?
+Perhaps all questions can be answered using the datasets, but these seem the be the easiest:
+
+1. What are the locations where crime is the most _prevalent_?
+2. What are some typical **motives** of crimes?
+3. What type of crime happens the **most**?
