@@ -1,3 +1,5 @@
+library("tidyverse")
+
 summary_info <- list()
 summary_info$records <- nrow(crimedata)
 summary_info$criteria <- ncol(crimedata)
