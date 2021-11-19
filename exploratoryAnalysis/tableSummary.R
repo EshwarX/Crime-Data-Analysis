@@ -17,7 +17,7 @@ tableSummary <- crimedata %>%
       total_sex = sum(Sexual.orientation, na.rm = TRUE),
       total_disability = sum(Disability, na.rm = TRUE),
       total_gender = sum(Gender, na.rm = TRUE),
-      total_genderIden = sum(Gender.identity, na.rm = TRUE), 
-      total_HateCrimes = total_race + total_religion + total_sex + total_disability + total_gender + total_genderIden
+      total_gender_iden = sum(Gender.identity, na.rm = TRUE), 
+      total_hate_crimes = total_race + total_religion + total_sex + total_disability + total_gender + total_genderIden
     
     )
