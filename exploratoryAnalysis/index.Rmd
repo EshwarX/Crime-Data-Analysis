@@ -5,24 +5,10 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library("tidyverse")
 ```
 
-## R Markdown
+## Introduction
+Q1. Write an introductory paragraph explaining the domain/data set.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+As world citizens, crime is a domain of information that we all care about and relate to. Knowing about the world situation is advantageous as we can be aware of certain dangers to avoid so we can live a peaceful and happy life. Therefore, we are interested to know about crimes that are happening all over the world with various motives. Additionally, we would like to know how crime types are distributed in different locations. It is important that we know about the kinds of crimes happening around the world so that we can think of potential problems that need the most attention and perhaps their solutions. The data set we chose to analyse in this assignment is Hate_Crime_Incidents_per_Bias_Motivation_and_Quarter_by_State_Federal_and_Agency_2019.csv. The domain would be specifically hate crimes.
