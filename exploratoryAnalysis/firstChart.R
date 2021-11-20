@@ -1,4 +1,4 @@
-national_hate_crimes <- tableSummary %>%
+national_hate_crimes <- tableTotal %>%
                             summarise(
                             race_crimes = sum(total_race, na.rm = TRUE),
                             religion_crimes = sum(total_religion, na.rm = TRUE),
@@ -14,7 +14,14 @@ bar_chart_hate_crime <- ggplot(hate_crimes_with_totals) +
                         geom_col(mapping = aes(x = type_of_hate_crime, y = total, fill = type_of_hate_crime)) +
                         labs(title = "Total U.S. Hate Crimes In 2019",
                              x = "Type of Hate Crime",
-                             y = "Total" )
+                             y = "Total" ) +
+                        scale_fill_discrete(name = "Type of Hate Crime", labels = c("Disability", 
+                                                                                    "Gender", 
+                                                                                    "Gender Identity",
+                                                                                    "Race", 
+                                                                                    "Religion")) +
+                        theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(), 
+                              legend.background = element_rect("darkgray"))
                         
 bar_chart_hate_crime
 
