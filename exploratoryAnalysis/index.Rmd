@@ -42,8 +42,7 @@ One _very_ noticeable observation from this chart is that **race** hate crimes h
 
 ```{r, echo = FALSE}
 source("PieChart.R")
-#pie_chart_hate_crime
-pie_chart_hate_crime_3d
+pie_chart_hate_crime
 ```
 
 The purpose of this chart was to demonstrate how much **proportion** each hate crime category takes places withn the records of US 2019 hate crimes. This visualization adds up all crime incidents and display them as a pie chart to show how much of one type of hate crime compared to the total hate crime incidents. With this visualization, it is clear which type of hate crime has a bigger proportion in the total crime incidents.
