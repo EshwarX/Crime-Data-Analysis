@@ -9,7 +9,7 @@ crimedata <- read.csv("https://raw.githubusercontent.com/info201b-2021-aut/final
 
 ##summary_info
 
-tableSummary <- crimedata %>%
+tableTotal <- crimedata %>%
     group_by(State) %>%
     summarise(
       total_race = sum(Race..Ethnicity..Ancestry, na.rm = TRUE),
@@ -17,7 +17,8 @@ tableSummary <- crimedata %>%
       total_sex = sum(Sexual.orientation, na.rm = TRUE),
       total_disability = sum(Disability, na.rm = TRUE),
       total_gender = sum(Gender, na.rm = TRUE),
-      total_genderIden = sum(Gender.identity, na.rm = TRUE), 
-      total_HateCrimes = total_race + total_religion + total_sex + total_disability + total_gender + total_genderIden
-    
+      total_gender_iden = sum(Gender.identity, na.rm = TRUE), 
+      total_hate_crimes = total_race + total_religion + total_sex + total_disability + total_gender + total_gender_iden
     )
+
+ colnames(tableTotal) <- c('States', 'Total Race', 'Total Religion', 'Total Sex', 'Total Disability', 'Total Gender', 'Total Gender Identity', 'Total Hate Crimes')
