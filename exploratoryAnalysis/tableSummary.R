@@ -21,11 +21,7 @@ tableTotal <- crimedata %>%
       total_hate_crimes = total_race + total_religion + total_sex + total_disability + total_gender + total_gender_iden
     )
 
-<<<<<<< HEAD
- ## colnames(tableTotal) <- c('States', 'Total Race', 'Total Religion', 'Total Sex', 'Total Disability', 'Total Gender', 'Total Gender Identity', 'Total Hate Crimes')
-
-=======
 pretty_tableTotal <- tableTotal
 
- ## colnames(tableTotal) <- c('States', 'Total Race', 'Total Religion', 'Total Sex', 'Total Disability', 'Total Gender', 'Total Gender Identity', 'Total Hate Crimes')
->>>>>>> a9d122a9e8f07f60a8680f1970a6c74f91101727
+colnames(pretty_tableTotal) <- c('States', 'Total Race', 'Total Religion', 'Total Sex', 'Total Disability', 'Total Gender', 'Total Gender Identity', 'Total Hate Crimes')
+
