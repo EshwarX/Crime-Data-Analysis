@@ -2,6 +2,7 @@ national_hate_crimes <- tableTotal %>%
                             summarise(
                             race_crimes = sum(total_race, na.rm = TRUE),
                             religion_crimes = sum(total_religion, na.rm = TRUE),
+                            sexual_orientation_crimes = sum(total_sex, na.rm = TRUE),
                             disability_crimes = sum(total_disability, na.rm = TRUE),
                             gender_crimes = sum(total_gender, na.rm = TRUE),
                             gender_identity_crimes = sum(total_gender_iden, na.rm = TRUE)
@@ -19,7 +20,8 @@ bar_chart_hate_crime <- ggplot(hate_crimes_with_totals) +
                                                                                     "Gender", 
                                                                                     "Gender Identity",
                                                                                     "Race", 
-                                                                                    "Religion")) +
+                                                                                    "Religion",
+                                                                                    "Sexual Orientation")) +
                         theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(), 
                               legend.background = element_rect("darkgray"))
                         
