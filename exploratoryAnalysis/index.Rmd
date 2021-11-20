@@ -48,3 +48,15 @@ pie_chart_hate_crime
 The purpose of this chart was to demonstrate how much **proportion** each hate crime category takes places withn the records of US 2019 hate crimes. This visualization adds up all crime incidents and display them as a pie chart to show how much of one type of hate crime compared to the total hate crime incidents. With this visualization, it is clear which type of hate crime has a bigger proportion in the total crime incidents.
 
 In this graph it is clearly shown that race, ethnicity and ancestry has a large proportion compared to other hate crimes, about 50-60%, followed by religion and sexual orietation, both have a proportion of around 20%.
+
+### Scatter Plot Chart
+
+```{r, echo = FALSE}
+source("~/ScatterPlotHateCrime.R")
+scatter_plot_hate_crime_chart
+```
+
+The purpose of this chart was to display the **combined** number hate crimes happening in the _different_ universities that are located in Washington during 2019. 
+This visualization, which would be mostly important for students and professors at the Universities, adds in various data collected in Washington universities and adds them to show which university is the safest when it comes to motivated crimes and which one is the worst. 
+
+The chart signalled that University of Washington was the safest university in 2019 having only 1 hate crime. Eastern Washington University, on the other hand, was the worst at being able to avoid motivated crimes, having a total of 8 hate crimes.
