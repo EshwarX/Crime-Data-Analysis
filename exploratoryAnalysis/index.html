@@ -170,8 +170,557 @@ pre code {
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>Q1. Write an introductory paragraph explaining the domain/data set.</p>
 <p>As world citizens, crime is a domain of information that we all care about and relate to. Knowing about the world situation is advantageous as we can be aware of certain dangers to avoid so we can live a peaceful and happy life. Therefore, we are interested to know about crimes that are happening all over the world with various motives. Additionally, we would like to know how crime types are distributed in different locations. It is important that we know about the kinds of crimes happening around the world so that we can think of potential problems that need the most attention and perhaps their solutions. The data set we chose to analyse in this assignment is Hate_Crime_Incidents_per_Bias_Motivation_and_Quarter_by_State_Federal_and_Agency_2019.csv. The domain would be specifically hate crimes.</p>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>There were many categories to group by in this dataset. We had states, different motives for hate crimes, quarters of the year, and how many rows and columns there are in the dataset. However, the particular values we calculated and focused on are the total amount of each different hate crimes per state and total overall for each state. So, we recorded <strong>Total Race</strong>, <strong>Total Religion</strong>, <strong>Total Sex</strong>, <strong>Total Disability</strong>, <strong>Total Gender</strong>, <strong>Total Gender Identity</strong>, and <strong>Total Hate Crimes</strong>.</p>
+<table>
+<colgroup>
+<col width="16%" />
+<col width="8%" />
+<col width="11%" />
+<col width="7%" />
+<col width="13%" />
+<col width="10%" />
+<col width="17%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">States</th>
+<th align="right">Total Race</th>
+<th align="right">Total Religion</th>
+<th align="right">Total Sex</th>
+<th align="right">Total Disability</th>
+<th align="right">Total Gender</th>
+<th align="right">Total Gender Identity</th>
+<th align="right">Total Hate Crimes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td align="left">Alaska</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">11</td>
+</tr>
+<tr class="odd">
+<td align="left">Arizona</td>
+<td align="right">143</td>
+<td align="right">36</td>
+<td align="right">30</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">217</td>
+</tr>
+<tr class="even">
+<td align="left">Arkansas</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">9</td>
+</tr>
+<tr class="odd">
+<td align="left">California</td>
+<td align="right">524</td>
+<td align="right">208</td>
+<td align="right">235</td>
+<td align="right">10</td>
+<td align="right">7</td>
+<td align="right">33</td>
+<td align="right">1017</td>
+</tr>
+<tr class="even">
+<td align="left">Colorado</td>
+<td align="right">117</td>
+<td align="right">36</td>
+<td align="right">47</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">5</td>
+<td align="right">212</td>
+</tr>
+<tr class="odd">
+<td align="left">Connecticut</td>
+<td align="right">48</td>
+<td align="right">16</td>
+<td align="right">11</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">76</td>
+</tr>
+<tr class="even">
+<td align="left">Delaware</td>
+<td align="right">10</td>
+<td align="right">4</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">22</td>
+</tr>
+<tr class="odd">
+<td align="left">District of Columbia</td>
+<td align="right">119</td>
+<td align="right">8</td>
+<td align="right">65</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">27</td>
+<td align="right">222</td>
+</tr>
+<tr class="even">
+<td align="left">Federal</td>
+<td align="right">63</td>
+<td align="right">47</td>
+<td align="right">19</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">132</td>
+</tr>
+<tr class="odd">
+<td align="left">Florida</td>
+<td align="right">48</td>
+<td align="right">36</td>
+<td align="right">27</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">111</td>
+</tr>
+<tr class="even">
+<td align="left">Georgia</td>
+<td align="right">76</td>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">100</td>
+</tr>
+<tr class="odd">
+<td align="left">Hawaii</td>
+<td align="right">30</td>
+<td align="right">2</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">41</td>
+</tr>
+<tr class="even">
+<td align="left">Idaho</td>
+<td align="right">18</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">24</td>
+</tr>
+<tr class="odd">
+<td align="left">Illinois</td>
+<td align="right">34</td>
+<td align="right">9</td>
+<td align="right">17</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">6</td>
+<td align="right">66</td>
+</tr>
+<tr class="even">
+<td align="left">Indiana</td>
+<td align="right">47</td>
+<td align="right">13</td>
+<td align="right">14</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">76</td>
+</tr>
+<tr class="odd">
+<td align="left">Iowa</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">10</td>
+</tr>
+<tr class="even">
+<td align="left">Kansas</td>
+<td align="right">36</td>
+<td align="right">25</td>
+<td align="right">7</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">74</td>
+</tr>
+<tr class="odd">
+<td align="left">Kentucky</td>
+<td align="right">114</td>
+<td align="right">12</td>
+<td align="right">19</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">152</td>
+</tr>
+<tr class="even">
+<td align="left">Louisiana</td>
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">7</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">26</td>
+</tr>
+<tr class="odd">
+<td align="left">Maine</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">19</td>
+</tr>
+<tr class="even">
+<td align="left">Maryland</td>
+<td align="right">7</td>
+<td align="right">4</td>
+<td align="right">7</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">19</td>
+</tr>
+<tr class="odd">
+<td align="left">Massachusetts</td>
+<td align="right">213</td>
+<td align="right">101</td>
+<td align="right">92</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">7</td>
+<td align="right">416</td>
+</tr>
+<tr class="even">
+<td align="left">Michigan</td>
+<td align="right">313</td>
+<td align="right">51</td>
+<td align="right">44</td>
+<td align="right">9</td>
+<td align="right">15</td>
+<td align="right">2</td>
+<td align="right">434</td>
+</tr>
+<tr class="odd">
+<td align="left">Minnesota</td>
+<td align="right">59</td>
+<td align="right">20</td>
+<td align="right">17</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">104</td>
+</tr>
+<tr class="even">
+<td align="left">Mississippi</td>
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">14</td>
+</tr>
+<tr class="odd">
+<td align="left">Missouri</td>
+<td align="right">52</td>
+<td align="right">13</td>
+<td align="right">16</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">83</td>
+</tr>
+<tr class="even">
+<td align="left">Montana</td>
+<td align="right">16</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">32</td>
+</tr>
+<tr class="odd">
+<td align="left">Nebraska</td>
+<td align="right">38</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">46</td>
+</tr>
+<tr class="even">
+<td align="left">Nevada</td>
+<td align="right">27</td>
+<td align="right">10</td>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">44</td>
+</tr>
+<tr class="odd">
+<td align="left">New Hampshire</td>
+<td align="right">8</td>
+<td align="right">5</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">16</td>
+</tr>
+<tr class="even">
+<td align="left">New Jersey</td>
+<td align="right">252</td>
+<td align="right">250</td>
+<td align="right">65</td>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">8</td>
+<td align="right">581</td>
+</tr>
+<tr class="odd">
+<td align="left">New Mexico</td>
+<td align="right">30</td>
+<td align="right">8</td>
+<td align="right">8</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">50</td>
+</tr>
+<tr class="even">
+<td align="left">New York</td>
+<td align="right">164</td>
+<td align="right">357</td>
+<td align="right">73</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">16</td>
+<td align="right">611</td>
+</tr>
+<tr class="odd">
+<td align="left">North Carolina</td>
+<td align="right">132</td>
+<td align="right">42</td>
+<td align="right">30</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">211</td>
+</tr>
+<tr class="even">
+<td align="left">North Dakota</td>
+<td align="right">14</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">18</td>
+</tr>
+<tr class="odd">
+<td align="left">Ohio</td>
+<td align="right">216</td>
+<td align="right">30</td>
+<td align="right">60</td>
+<td align="right">55</td>
+<td align="right">7</td>
+<td align="right">23</td>
+<td align="right">391</td>
+</tr>
+<tr class="even">
+<td align="left">Oklahoma</td>
+<td align="right">14</td>
+<td align="right">5</td>
+<td align="right">8</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">28</td>
+</tr>
+<tr class="odd">
+<td align="left">Oregon</td>
+<td align="right">116</td>
+<td align="right">29</td>
+<td align="right">27</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">182</td>
+</tr>
+<tr class="even">
+<td align="left">Pennsylvania</td>
+<td align="right">28</td>
+<td align="right">9</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">41</td>
+</tr>
+<tr class="odd">
+<td align="left">Rhode Island</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">17</td>
+</tr>
+<tr class="even">
+<td align="left">South Carolina</td>
+<td align="right">36</td>
+<td align="right">20</td>
+<td align="right">7</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">68</td>
+</tr>
+<tr class="odd">
+<td align="left">South Dakota</td>
+<td align="right">13</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">20</td>
+</tr>
+<tr class="even">
+<td align="left">Tennessee</td>
+<td align="right">91</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">117</td>
+</tr>
+<tr class="odd">
+<td align="left">Texas</td>
+<td align="right">300</td>
+<td align="right">44</td>
+<td align="right">71</td>
+<td align="right">19</td>
+<td align="right">7</td>
+<td align="right">18</td>
+<td align="right">459</td>
+</tr>
+<tr class="even">
+<td align="left">Utah</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">18</td>
+</tr>
+<tr class="odd">
+<td align="left">Vermont</td>
+<td align="right">18</td>
+<td align="right">4</td>
+<td align="right">9</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">33</td>
+</tr>
+<tr class="even">
+<td align="left">Virginia</td>
+<td align="right">102</td>
+<td align="right">27</td>
+<td align="right">27</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">163</td>
+</tr>
+<tr class="odd">
+<td align="left">Washington</td>
+<td align="right">331</td>
+<td align="right">76</td>
+<td align="right">116</td>
+<td align="right">8</td>
+<td align="right">8</td>
+<td align="right">17</td>
+<td align="right">556</td>
+</tr>
+<tr class="even">
+<td align="left">West Virginia</td>
+<td align="right">18</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">31</td>
+</tr>
+<tr class="odd">
+<td align="left">Wisconsin</td>
+<td align="right">39</td>
+<td align="right">18</td>
+<td align="right">5</td>
+<td align="right">4</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">74</td>
+</tr>
+<tr class="even">
+<td align="left">Wyoming</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">5</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 

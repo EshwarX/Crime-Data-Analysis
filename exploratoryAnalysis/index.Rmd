@@ -2,9 +2,25 @@
 title: "index"
 output: html_document
 ---
+```{r, , include = F}
+library("knitr")
+library("tidyverse")
+```
+
 
 ## Introduction
-Q1. Write an introductory paragraph explaining the domain/data set.
 
 As world citizens, crime is a domain of information that we all care about and relate to. Knowing about the world situation is advantageous as we can be aware of certain dangers to avoid so we can live a peaceful and happy life. Therefore, we are interested to know about crimes that are happening all over the world with various motives. Additionally, we would like to know how crime types are distributed in different locations. It is important that we know about the kinds of crimes happening around the world so that we can think of potential problems that need the most attention and perhaps their solutions. 
 The data set we chose to analyse in this assignment is Hate_Crime_Incidents_per_Bias_Motivation_and_Quarter_by_State_Federal_and_Agency_2019.csv. The domain would be specifically hate crimes.
+
+## Summary
+
+There were many categories to group by in this dataset. We had states, different motives for hate crimes, quarters of the year, and how many rows and columns there are in the dataset. However, the particular values we calculated and focused on are the total amount of each different hate crimes per state and total overall for each state. So, we recorded **Total Race**, **Total Religion**, **Total Sex**, **Total Disability**, **Total Gender**, **Total Gender Identity**, and **Total Hate Crimes**. The purpose of gathering this information is to see what hate crimes are more prevalent in each state
+
+```{r, echo = FALSE}
+source("tableSummary.R")
+kable(tableTotal)
+```
+
+
+
