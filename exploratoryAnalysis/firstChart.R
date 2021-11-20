@@ -1,4 +1,4 @@
-national_hate_crimes <- tableSummary %>%
+national_hate_crimes <- tableTotal %>%
                             summarise(
                             race_crimes = sum(total_race, na.rm = TRUE),
                             religion_crimes = sum(total_religion, na.rm = TRUE),
