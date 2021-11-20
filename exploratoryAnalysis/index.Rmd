@@ -30,7 +30,7 @@ kable(tableTotal)
 ### Bar Chart
 
 ```{r, echo = FALSE}
-source("firstChart.R")
+source("barChart.R")
 bar_chart_hate_crime
 ```
 
