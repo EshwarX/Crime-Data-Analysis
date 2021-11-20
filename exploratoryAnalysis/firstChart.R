@@ -10,8 +10,8 @@ type_of_hate_crime <- colnames(national_hate_crimes)
 total <- unlist(national_hate_crimes[1,], use.names = FALSE)
 hate_crimes_with_totals <- data.frame(type_of_hate_crime, total)
 
-bar_chart_hate_crime <- ggplot(hate_crimes_with_totals, color = type_of_hate_crime) +
-                        geom_col(mapping = aes(x = type_of_hate_crime, y = total), color = type_of_hate_crime) +
+bar_chart_hate_crime <- ggplot(hate_crimes_with_totals) +
+                        geom_col(mapping = aes(x = type_of_hate_crime, y = total, fill = type_of_hate_crime)) +
                         labs(title = "Total U.S. Hate Crimes In 2019",
                              x = "Type of Hate Crime",
                              y = "Total" )
