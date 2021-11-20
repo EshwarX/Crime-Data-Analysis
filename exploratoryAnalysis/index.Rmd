@@ -19,9 +19,16 @@ There were many categories to group by in this dataset. We had states, different
 
 ```{r, echo = FALSE}
 source("tableSummary.R")
-colnames(tableTotal) <- c('States', 'Total Race', 'Total Religion', 'Total Sex', 'Total Disability', 'Total Gender', 'Total Gender Identity', 'Total Hate Crimes')
+colnames(pretty_tableTotal) <- c('States', 'Total Race', 'Total Religion', 'Total Sex', 'Total Disability', 'Total Gender', 'Total Gender Identity', 'Total Hate Crimes')
 kable(tableTotal)
 ```
 
+
+##
+
+```{r, echo = FALSE}
+source("firstChart.R")
+bar_chart_hate_crime
+```
 
 
