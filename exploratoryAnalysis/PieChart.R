@@ -14,4 +14,5 @@ groups <- c(sum(crimedata$Race..Ethnicity..Ancestry, na.rm = TRUE),
             sum(crimedata$Gender.identity, na.rm = TRUE))
 categories <- c("Race, Ethnicity and Ancestry", "religion", "sexual orientation", "disability", "gender","gender identity")
 pie(x=groups, labels=categories, radius=1, main="Proportion of Hate Crimes", col=col, clockwise=T)
-pie3D(x=groups,labels = categories,explode = 0.1, main = "Proportion of Hate Crimes 3D")
+#uncomment the following line to see a 3D pie chart
+#pie3D(x=groups,labels = categories,explode = 0.1, main = "Proportion of Hate Crimes 3D")
