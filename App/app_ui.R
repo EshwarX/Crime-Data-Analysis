@@ -1,7 +1,9 @@
+
 ui <- fluidPage(
   navbarPage("Crime Hotspots and Motives!",
+             # Intro
              tabPanel("Introduction",
-                      h2("Introduction:"),
+                      h2("Introduction"),
                       p("Hate crimes are crimes or attacks on specific persons 
                       due to their belonging to a particular group. For example, 
                       racially-motivated hate crimes are made against a victim 
@@ -26,7 +28,16 @@ ui <- fluidPage(
                         ),
                       ),
              ),
-             tabPanel("Interactive chart 1"),
+             # Travon's Map
+             tabPanel("Hate Crime Map",
+                      # Side
+                      sidebarPanel(
+                        
+                      ),
+                      # Main
+                      mainPanel(
+                        plotlyOutput(outputId = "map")
+                      )),
              tabPanel("Interactive chart 2"),
              tabPanel("Interactive chart 3"),
              tabPanel("Conclusion Page"),
