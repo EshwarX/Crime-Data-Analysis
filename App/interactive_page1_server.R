@@ -29,5 +29,30 @@ colnames(state_shape) <- c("long", "lat", "group", "order", "State",
                            "subregion", "Race", "Religion", "Sexual Orientation",
                            "Disability", "Gender", "Gender Identity", 
                            "All")
-# USA MAP 
+
+# Plotly
+
+
+country_summary2 <- hate_crime_data %>% 
+  group_by(State) %>%
+  summarize(
+    race_hate_crimes = sum(Race..Ethnicity..Ancestry, na.rm = TRUE),
+    religion_hate_crimes = sum(Religion, na.rm = TRUE),
+    sexual_orientation_hate_crimes = sum(Sexual.orientation, na.rm = TRUE),
+    disability_hate_crimes = sum(Disability, na.rm = TRUE),
+    gender_hate_crimes = sum(Gender, na.rm = TRUE),
+    gender_identity_hate_crimes = sum(Gender.identity, na.rm = TRUE)
+  ) %>%
+  filter(State != "" & State != "Federal") %>%
+  mutate(
+    all_hate_crimes = race_hate_crimes + religion_hate_crimes +
+      sexual_orientation_hate_crimes + disability_hate_crimes +
+      gender_hate_crimes + gender_identity_hate_crimes,
+      state_abbreviation = state.abb[match(State, state.name)]
+  ) 
+country_summary2[8, 9] <- "DC"
+colnames(country_summary2) <- c("State", "Race", "Religion", "Sexual Orientation",
+                           "Disability", "Gender", "Gender Identity", 
+                           "All", "state_abbreviation")
+
 

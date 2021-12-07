@@ -11,30 +11,21 @@ interactive_page1 <- tabPanel("Hate Crime Map",
                          "Sexual Orientation",
                          "Disability",
                          "Gender",
-                         "Gender",
+                         "Gender Identity",
                          "All"),
              selected = "All"
            ),
            selectInput(
-             inputId = "lowcolor",
-             label = "Select a Color Representing the Lower End (Default is White)",
+             inputId = "colorscale",
+             label = "Select a Color Scale",
              multiple = FALSE,
-             selected = "Blue",
-             choices = c("Black", "White", "Red", "Orange", 
-                         "Yellow", "Green", "Blue", "Purple", 
-                         "Pink")
-           ),
-           selectInput(
-             inputId = "highcolor",
-             label = "Select a Color Representing the Higher End (Default is Black)",
-             multiple = FALSE,
-             selected = "Red",
-             choices = c("Black", "White", "Red", "Orange", 
-                         "Yellow", "Green", "Blue", "Purple", 
-                         "Pink")
+             selected = "Bluered",
+             choices = c("Blackbody", "Bluered", "Blues", "Earth", "Electric", 
+                         "Greens", "Greys", "Hot", "Jet", "Picnic", "Portland",
+                         "Rainbow", "RdBu", "Reds", "YIGnBu", "YIOrRd")
            )
          ),
          # Main
          mainPanel(
-           plotlyOutput(outputId = "map")
+           plotlyOutput(outputId = "interactivemap")
          ))
