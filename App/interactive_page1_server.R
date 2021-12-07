@@ -54,5 +54,3 @@ country_summary2[8, 9] <- "DC"
 colnames(country_summary2) <- c("State", "Race", "Religion", "Sexual Orientation",
                            "Disability", "Gender", "Gender Identity", 
                            "All", "state_abbreviation")
-
-

@@ -21,7 +21,7 @@ server <- function(input, output) {
         colorscale = input$colorscale) %>%
       layout(
         geo = list(scope = "usa"),
-        title = "U.S Hate Crimes in 2019",
+        title = "Reported U.S Hate Crimes in 2019",
         showlegend = FALSE
       )
   })

@@ -1,7 +1,6 @@
 library("shiny")
 # Travon's Map
 interactive_page1 <- tabPanel("Hate Crime Map",
-         # Side
          sidebarPanel(
            radioButtons(
              inputId = "variable",
