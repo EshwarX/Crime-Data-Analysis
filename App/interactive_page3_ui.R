@@ -1,0 +1,1 @@
+interactive_page3 <- tabPanel("Interactive chart 3")
