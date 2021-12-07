@@ -29,7 +29,5 @@ colnames(state_shape) <- c("long", "lat", "group", "order", "State",
                            "subregion", "Race", "Religion", "Sexual Orientation",
                            "Disability", "Gender", "Gender Identity", 
                            "All")
-
-# Map
-# USA MAP - Travon Dao
+# USA MAP 
 
