@@ -5,6 +5,7 @@ source("interactive_page3_ui.R")
 source("summary_page.R")
 
 ui <- fluidPage(
+  includeCSS("styles.css"),
   theme = shinytheme("cerulean"),
   navbarPage("Crime Hotspots and Motives!",
              intro,
