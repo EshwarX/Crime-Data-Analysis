@@ -12,16 +12,18 @@ server <- function(input, output) {
              hoverinfo = "text",
              text = ~paste0("State: ", State, "<br>",
                            "Count: ", get(input$variable), " (", input$variable, 
-                           " Hate Crimes",")")
+                           " Hate Crimes",")"),
+             mode = "markers",
+             colorbar = list(title = "Reported Counts")
                ) %>%
       add_trace(
         locations = ~state_abbreviation,
         z = ~get(input$variable),
         color = input$variable,
         colorscale = ~input$colorscale) %>%
-      layout(
-        geo = list(scope = "usa"),
-        title = "Reported U.S Hate Crimes in 2019"
-      )
+        layout(
+          geo = list(scope = "usa"),
+          title = "Reported U.S Hate Crimes in 2019"
+        )
   })
 }
