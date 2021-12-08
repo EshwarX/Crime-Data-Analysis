@@ -1,26 +1,40 @@
-intro <- tabPanel("Introduction",
-         h2("Introduction"),
-         p("Hate crimes are crimes or attacks on specific persons 
-                      due to their belonging to a particular group. For example, 
-                      racially-motivated hate crimes are made against a victim 
-                      because of their race or ancestry. These type of crimes 
-                      are very different than the more mainstream crimes such 
-                      as robberies. When one attempts to rob a store, they 
-                      should expect to gain something (e.g. money). 
-                      However, there is absolutely nothing to gain from hate 
-                      crimes, but people still perform them."),
-         p("We have found a dataset on the number of types of hate 
-                        crimes (race, religion, sexual orientation, disability, 
-                        gender, and gender identity). This is on hate crimes in
-                        the United States during 2019. Other information 
-                        included is the “agency” (such as a specific city or a 
-                        college campus) and their population. Additionally, 
-                        there are quarterly sums of hate crimes for each 
-                        location."),
-         sidebarLayout(
-           sidebarPanel(
-           ),
-           mainPanel(
-           ),
-         ),
+intro <- tabPanel(title = "Introduction",
+                  h1("Introduction:", align = "center"),
+                  br(),
+                  br(),
+                  sidebarLayout(
+                    sidebarPanel(height = 510, width = 4,
+                                tags$img(src='crimePic.jpeg', height = 500, width = 540),
+                    ),
+                    mainPanel(
+                      p("As world citizens, crime is a domain of information
+                            that we all care about and relate to. Knowing about 
+                            the world situation is advantageous as we can be 
+                            aware of certain dangers to avoid so we can live a 
+                            peaceful and happy life.",
+                        style = "font-size:17px;"),
+                      br(),
+                      br(),
+                      p("Given the events of 2020 and it forcing the world 
+                            to be reminded of the vast hatred that still 
+                            persists among people, we decided to analyze hate 
+                            crimes. Our analysis and presentation will mostly 
+                            revolve around the distribution of those hate crimes
+                            (location of the incident) and type of hate crime it
+                            was (the motivation behind it). This information 
+                            could prove to be useful in dodging certain places 
+                            given their trend of having a particular type of 
+                            hate crime happeing frequently.",
+                        style = "font-size:17px;"),
+                      br(),
+                      br(),
+                      p("This project is based on the data provided by this ",
+                        tags$a(href="https://raw.githubusercontent.com/info201b-2021-aut/final-project-tdao09/main/data/Hate_Crime_Incidents_per_Bias_Motivation_and_Quarter_by_State_Federal_and_Agency_2019.csv?token=AV5GX7FAKC3XTDSH7WCQC3TBXF7YQ", "dataset."),
+                        "This dataset stores the records of different 
+                            states in the United States and the number of hate
+                            crimes that occured there organized by the specific 
+                            motive behind it.",
+                        style = "font-size:17.5px;"),
+                    ),
+                  ),
 )
