@@ -26,4 +26,13 @@ server <- function(input, output) {
           title = "Reported U.S Hate Crimes in 2019"
         )
   })
+  output$pieChart <- renderPlotly(({
+    if(input$category == "By victim group"){
+      plot
+    }else if(input$category == "By state"){
+      stateplot
+    }else if(input$category == "By Agency Type"){
+      agencyplot
+    }
+  }))
 }
