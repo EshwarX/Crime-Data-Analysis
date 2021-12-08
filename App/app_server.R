@@ -17,12 +17,11 @@ server <- function(input, output) {
       add_trace(
         locations = ~state_abbreviation,
         z = ~get(input$variable),
-        color = ~input$variable,
-        colorscale = input$colorscale) %>%
+        color = input$variable,
+        colorscale = ~input$colorscale) %>%
       layout(
         geo = list(scope = "usa"),
-        title = "Reported U.S Hate Crimes in 2019",
-        showlegend = FALSE
+        title = "Reported U.S Hate Crimes in 2019"
       )
   })
 }
