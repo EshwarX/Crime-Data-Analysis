@@ -1,1 +1,16 @@
-interactive_page3 <- tabPanel("Interactive chart 3")
+interactive_page3 <- tabPanel("Hate Crime Categories",
+                              # Side
+                              sidebarPanel(
+                                radioButtons(
+                                  inputId = "category",
+                                  label = "Select Type Categories",
+                                  choices = c("By victim group", 
+                                              "By state",
+                                              "By Agency Type"),
+                                  selected = "By victim group"
+                                )
+                              ),
+                              # Main
+                              mainPanel(
+                                plotlyOutput(outputId = "pieChart")
+                              ))
