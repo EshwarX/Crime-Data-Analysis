@@ -1,4 +1,4 @@
-interactive_page3 <- tabPanel("Hate Crime Categories",
+interactive_page3 <- tabPanel("Hate Crime Distribution",
                               # Side
                               sidebarPanel(
                                 radioButtons(
