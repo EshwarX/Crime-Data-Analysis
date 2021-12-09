@@ -2,6 +2,8 @@ library(tidyverse)
 library(plotly)
 library(dplyr)
 
+crimedata <- read.csv("https://raw.githubusercontent.com/info201b-2021-aut/final-project-tdao09/main/data/Hate_Crime_Incidents_per_Bias_Motivation_and_Quarter_by_State_Federal_and_Agency_2019.csv?token=AV5FF3GVGGEB4K5YBEV2ZADBXBPXK")
+
 sumCrime <- crimedata %>%
   group_by(State)%>%
   summarise(crime = sum(X1st.quarter, na.rm = TRUE))
