@@ -65,5 +65,4 @@ summary_page <- tabPanel(title = "Summary Page",
                         most dangerous place to be at if one wants to avoid being
                         a victim of hate crime.",
                            style = "font-size:18px"),
-),
-                         )
+)
