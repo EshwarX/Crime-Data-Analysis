@@ -9,20 +9,21 @@ groups <- c(sum(crimedata$Race..Ethnicity..Ancestry, na.rm = TRUE),
             sum(crimedata$Gender, na.rm = TRUE), 
             sum(crimedata$Gender.identity, na.rm = TRUE))
 
+quartervalue <- c(sum(crimedata$X1st.quarter, na.rm = TRUE), 
+            sum(crimedata$X2nd.quarter, na.rm = TRUE), 
+            sum(crimedata$X3rd.quarter, na.rm = TRUE), 
+            sum(crimedata$X4th.quarter, na.rm = TRUE))
+
 crimedata <- crimedata%>%
   mutate(totalcrime = Race..Ethnicity..Ancestry + Religion + Sexual.orientation + Disability + Gender + Gender.identity)
-
-sumCrime <- crimedata %>%
-  group_by(State)%>%
-  summarise(crime = sum(totalcrime, na.rm = TRUE))
-sumCrime
 
 sumAgency <- crimedata %>%
   group_by(Agency.Type) %>%
   summarise(crime = sum(totalcrime, na.rm = TRUE))
 
+quarter <- c("first quarter", "second quarter", "third quarter", "fourth quarter")
+
 categories <- c("Race, Ethnicity and Ancestry", "religion", "sexual orientation", "disability", "gender","gender identity")
-states <- unique(crimedata$State)
 agencytype <- unique(crimedata$Agency.Type)
 
 plot <- plot_ly(crimeframe, labels = categories, values = groups, type = 'pie')
@@ -30,8 +31,8 @@ plot <- plot %>% layout(title = 'Hate Crime Victims by Categories',
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
-stateplot <- plot_ly(sumCrime, labels = states, values = sumCrime$crime, type = 'pie')
-stateplot <- stateplot %>% layout(title = 'Hate Crime Victims by States',
+quarterplot <- plot_ly(crimeframe, labels = quarter, values = quartervalue, type = 'pie')
+quarterplot <- quarterplot %>% layout(title = 'Hate Crime Victims by Quarters',
                         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
