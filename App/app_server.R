@@ -26,16 +26,18 @@ server <- function(input, output) {
           title = "Reported U.S Hate Crimes in 2019"
         )
   })
+  
   output$barChart <- renderPlotly(({
     if(input$quarter == "1st Quarter"){
       firstQuarter
-    }else if(input$category == "2nd Quarter"){
+    }else if(input$quarter == "2nd Quarter"){
       secondQuarter
-    }else if(input$category == "3rd Quarter"){
+    }else if(input$quarter == "3rd Quarter"){
       thirdQuarter
-    }else if(input$category == "3rd Quarter"){
-      thirdQuarter
+    }else if(input$quarter == "4th Quarter"){
+      fourthQuarter
   }))
+      
   output$pieChart <- renderPlotly(({
     if(input$category == "By victim group"){
       plot
