@@ -36,13 +36,14 @@ server <- function(input, output) {
       thirdQuarter
     }else if(input$quarter == "4th Quarter"){
       fourthQuarter
+    }
   }))
       
   output$pieChart <- renderPlotly(({
     if(input$category == "By victim group"){
       plot
-    }else if(input$category == "By state"){
-      stateplot
+    }else if(input$category == "By quarter"){
+      quarterplot
     }else if(input$category == "By Agency Type"){
       agencyplot
     }
