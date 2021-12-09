@@ -2,7 +2,7 @@ intro <- tabPanel(title = "Introduction",
                   h1("Introduction", align = "center"),
                   hr(),
                   br(),
-                  p(tags$img(src='crimePic.jpeg', height = 300, width = 400),
+                  p(tags$img(src='https://empowerms.org/wp-content/uploads/2019/10/images.jpeg', height = 300, width = 400),
                     align = "center"),
                   br(),
                   p("As world citizens, crime is a domain of information
