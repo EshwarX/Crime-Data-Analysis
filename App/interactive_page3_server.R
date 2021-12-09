@@ -26,12 +26,12 @@ quarter <- c("first quarter", "second quarter", "third quarter", "fourth quarter
 categories <- c("Race, Ethnicity and Ancestry", "religion", "sexual orientation", "disability", "gender","gender identity")
 agencytype <- unique(crimedata$Agency.Type)
 
-plot <- plot_ly(crimeframe, labels = categories, values = groups, type = 'pie')
+plot <- plot_ly(crimedata, labels = categories, values = groups, type = 'pie')
 plot <- plot %>% layout(title = 'Hate Crime Victims by Categories',
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
-quarterplot <- plot_ly(crimeframe, labels = quarter, values = quartervalue, type = 'pie')
+quarterplot <- plot_ly(crimedata, labels = quarter, values = quartervalue, type = 'pie')
 quarterplot <- quarterplot %>% layout(title = 'Hate Crime Victims by Quarters',
                         xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                         yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
