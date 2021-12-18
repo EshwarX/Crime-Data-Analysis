@@ -2,7 +2,7 @@ source("intro_ui.R")
 source("interactive_page1_ui.R")
 source("interactive_page2_ui.R")
 source("interactive_page3_ui.R")
-source("summary_page.R")
+source("Summary_page.R")
 
 ui <- fluidPage(
   includeCSS("styles.css"),
