@@ -2,7 +2,7 @@ library("plotly")
 library("dplyr")
 library("ggplot2")
 
-hate_crime_data <- read.csv("https://raw.githubusercontent.com/info201b-2021-aut/final-project-tdao09/main/data/Hate_Crime_Incidents_per_Bias_Motivation_and_Quarter_by_State_Federal_and_Agency_2019.csv?token=AV5FF3GVGGEB4K5YBEV2ZADBXBPXK")
+hate_crime_data <- read.csv("https://raw.githubusercontent.com/info201b-2021-aut/final-project-tdao09/main/data/Hate_Crime_Incidents_per_Bias_Motivation_and_Quarter_by_State_Federal_and_Agency_2019.csv?token=AV5GX7BVQGI5JACAQXH2QI3BY25KW")
 # country_summary <- hate_crime_data %>% 
 #   group_by(State) %>%
 #   summarize(
